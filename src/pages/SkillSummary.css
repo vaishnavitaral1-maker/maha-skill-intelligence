@@ -1,0 +1,75 @@
+.skill-summary-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f4f7fb;
+}
+
+.skill-summary-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.skill-summary-container h1 {
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.skill-summary-subtitle {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.summary-card {
+  background: #2563eb;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.summary-card h2 {
+  margin: 0 0 10px;
+}
+
+.summary-card p {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.summary-section {
+  margin-top: 30px;
+}
+
+.summary-section h2 {
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.summary-item {
+  padding: 20px;
+  background: #eef4ff;
+  border-left: 5px solid #2563eb;
+  border-radius: 10px;
+}
+
+.summary-item h3 {
+  margin: 0 0 8px;
+  color: #1d4ed8;
+}
+
+.summary-item p {
+  margin: 0;
+  color: #374151;
+  font-weight: bold;
+}
