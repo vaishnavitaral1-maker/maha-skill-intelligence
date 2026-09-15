@@ -1,0 +1,415 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7faff;
+  color: #14213d;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+  background: white;
+  border-bottom: 1px solid #e6edf5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background: #155eef;
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.logo p {
+  font-size: 10px;
+  color: #155eef;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: #53627a;
+  font-size: 14px;
+}
+
+.nav-button,
+.primary-button {
+  background: #155eef;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 22px;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 90px 7%;
+  background: linear-gradient(135deg, #eef5ff, #ffffff);
+  min-height: 600px;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.tag {
+  display: inline-block;
+  background: #e1edff;
+  color: #155eef;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #155eef;
+}
+
+.hero p {
+  font-size: 17px;
+  color: #53627a;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.secondary-button {
+  background: white;
+  border: 1px solid #cdd9eb;
+  color: #14213d;
+  border-radius: 8px;
+  padding: 14px 22px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 45px;
+  margin-top: 50px;
+}
+
+.hero-stats h3 {
+  font-size: 30px;
+  color: #155eef;
+}
+
+.hero-stats p {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+
+.hero-visual {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit-card {
+  width: 330px;
+  height: 330px;
+  border: 2px dashed #a9c6f5;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #155eef;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 15px 40px #155eef55;
+}
+
+.center-circle span {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.center-circle small {
+  font-size: 11px;
+  text-align: center;
+}
+
+.orbit-item {
+  position: absolute;
+  background: white;
+  border: 1px solid #dce7f7;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 8px 20px #152b4d12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 25px;
+}
+
+.orbit-item span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.government {
+  top: -30px;
+  left: 90px;
+}
+
+.industry {
+  top: 100px;
+  right: -70px;
+}
+
+.training {
+  bottom: -30px;
+  left: 90px;
+}
+
+.students {
+  top: 100px;
+  left: -70px;
+}
+
+.about-section,
+.ecosystem-section,
+.contact-section {
+  padding: 90px 7%;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.section-heading h2 {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.section-heading p {
+  color: #53627a;
+  line-height: 1.7;
+}
+
+.feature-grid,
+.stakeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature-card,
+.stakeholder-card {
+  background: white;
+  border: 1px solid #e1eaf5;
+  border-radius: 16px;
+  padding: 28px;
+  transition: 0.3s;
+}
+
+.feature-card:hover,
+.stakeholder-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px #15335c12;
+}
+
+.feature-icon,
+.big-icon {
+  font-size: 35px;
+  margin-bottom: 18px;
+}
+
+.feature-card h3,
+.stakeholder-card h3 {
+  margin-bottom: 12px;
+}
+
+.feature-card p,
+.stakeholder-card p {
+  color: #65758b;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.ecosystem-section {
+  background: #f0f5fc;
+}
+
+.stakeholder-card {
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  right: 22px;
+  top: 20px;
+  color: #b6c6dc;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.stakeholder-card button {
+  background: none;
+  border: none;
+  color: #155eef;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+.contact-section {
+  background: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 7%;
+  background: #14213d;
+  color: white;
+}
+
+footer .logo h2 {
+  color: white;
+}
+
+footer .logo p {
+  color: #9dbcf6;
+}
+
+footer > p {
+  font-size: 13px;
+  color: #b8c4d7;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-buttons,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    transform: scale(0.8);
+  }
+
+  .feature-grid,
+  .stakeholder-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .nav-button {
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .hero-stats h3 {
+    font-size: 24px;
+  }
+
+  .feature-grid,
+  .stakeholder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    width: 300px;
+    height: 300px;
+    transform: scale(0.7);
+  }
+}
